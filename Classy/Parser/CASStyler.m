@@ -268,6 +268,9 @@ NSArray *ClassGetSubclasses(Class parentClass) {
     CASObjectClassDescriptor *objectClassDescriptor = [self objectClassDescriptorForClass:aClass];
     CASPropertyDescriptor *propertyDescriptor = [objectClassDescriptor propertyDescriptorForKey:styleProperty.name];
 
+    if (!propertyDescriptor) {
+        CASLog(@"Property '%@' not found. Class '%@'", styleProperty.name, objectClassDescriptor.objectClass);
+    }
     //Special case textAttributes
     BOOL isTextAttributesProperty = styleProperty.childStyleProperties.count && [[styleProperty.name lowercaseString] hasSuffix:@"textattributes"];
 
