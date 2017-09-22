@@ -7,7 +7,9 @@
 //
 
 #import "CASSimpleFormViewController.h"
-#import <Classy/Classy.h>
+@import Classy;
+
+#import "ClassyExample-Swift.h"
 
 @interface CASSimpleFormViewController ()
 
@@ -31,6 +33,15 @@
     v.backgroundColor = [UIColor redColor];
     v.cas_styleClass = @"shadow-view";
     [self.view addSubview:v];
+    
+    SwiftExampleView *swiftView = [[SwiftExampleView alloc] init];
+    swiftView.translatesAutoresizingMaskIntoConstraints = NO;
+    [self.view addSubview:swiftView];
+    
+    [swiftView.bottomAnchor constraintEqualToAnchor:self.view.bottomAnchor].active = YES;
+    [swiftView.rightAnchor constraintEqualToAnchor:self.view.rightAnchor].active = YES;
+    [swiftView.leftAnchor constraintEqualToAnchor:self.view.leftAnchor].active = YES;
+    [swiftView.heightAnchor constraintEqualToConstant:100].active = YES;
 }
 
 @end

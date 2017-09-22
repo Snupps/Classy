@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		4E506422190EF2F8003A03B0 /* Ball.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E506421190EF2F8003A03B0 /* Ball.png */; };
-		BA23251D9EB84FA09338B05C /* libPods-ClassyExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9C8ED2DF59B45B2A38549AB /* libPods-ClassyExample.a */; };
 		DD355BDB183E9CD30071E543 /* variables.cas in Resources */ = {isa = PBXBuildFile; fileRef = DD355BDA183E9CD30071E543 /* variables.cas */; };
 		DD61F4441816370F004A8777 /* stylesheet.cas in Resources */ = {isa = PBXBuildFile; fileRef = DD61F4431816370F004A8777 /* stylesheet.cas */; };
 		DDAB256B1814BBBB00F3DAAE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDAB256A1814BBBB00F3DAAE /* Foundation.framework */; };
@@ -21,7 +20,24 @@
 		DDFE54A51814EBBC003BF9C6 /* CASRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDFE54A41814EBBC003BF9C6 /* CASRootViewController.m */; };
 		DDFE54A81814EF07003BF9C6 /* CASSimpleFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDFE54A71814EF07003BF9C6 /* CASSimpleFormViewController.m */; };
 		DDFE54AB1814EF41003BF9C6 /* CASCatalogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDFE54AA1814EF41003BF9C6 /* CASCatalogViewController.m */; };
+		F38A009B1F750D0800A27C5F /* SwiftExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38A009A1F750D0800A27C5F /* SwiftExampleView.swift */; };
+		F3B6477A1F6AF3A500B994FF /* Classy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3B647791F6AF3A500B994FF /* Classy.framework */; };
+		F3B6477B1F6AF3A500B994FF /* Classy.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F3B647791F6AF3A500B994FF /* Classy.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F3B6477C1F6AF3A500B994FF /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F3B6477B1F6AF3A500B994FF /* Classy.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		136384E66419452BA007511C /* Pods-ClassyExample.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClassyExample.xcconfig"; path = "../Pods/Pods-ClassyExample.xcconfig"; sourceTree = "<group>"; };
@@ -47,6 +63,9 @@
 		DDFE54A91814EF41003BF9C6 /* CASCatalogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CASCatalogViewController.h; sourceTree = "<group>"; };
 		DDFE54AA1814EF41003BF9C6 /* CASCatalogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CASCatalogViewController.m; sourceTree = "<group>"; };
 		E9C8ED2DF59B45B2A38549AB /* libPods-ClassyExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ClassyExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F38A009A1F750D0800A27C5F /* SwiftExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftExampleView.swift; sourceTree = "<group>"; };
+		F3B647781F6AF39E00B994FF /* Classy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Classy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3B647791F6AF3A500B994FF /* Classy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Classy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +76,7 @@
 				DDAB256D1814BBBB00F3DAAE /* CoreGraphics.framework in Frameworks */,
 				DDAB256F1814BBBB00F3DAAE /* UIKit.framework in Frameworks */,
 				DDAB256B1814BBBB00F3DAAE /* Foundation.framework in Frameworks */,
-				BA23251D9EB84FA09338B05C /* libPods-ClassyExample.a in Frameworks */,
+				F3B6477A1F6AF3A500B994FF /* Classy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +103,7 @@
 		DDAB255E1814BBBB00F3DAAE = {
 			isa = PBXGroup;
 			children = (
+				F3B647791F6AF3A500B994FF /* Classy.framework */,
 				DDAB25701814BBBB00F3DAAE /* ClassyExample */,
 				DDAB25691814BBBB00F3DAAE /* Frameworks */,
 				DDAB25681814BBBB00F3DAAE /* Products */,
@@ -102,6 +122,7 @@
 		DDAB25691814BBBB00F3DAAE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F3B647781F6AF39E00B994FF /* Classy.framework */,
 				DDAB256A1814BBBB00F3DAAE /* Foundation.framework */,
 				DDAB256C1814BBBB00F3DAAE /* CoreGraphics.framework */,
 				DDAB256E1814BBBB00F3DAAE /* UIKit.framework */,
@@ -122,6 +143,7 @@
 				DDFE54A71814EF07003BF9C6 /* CASSimpleFormViewController.m */,
 				DDFE54A91814EF41003BF9C6 /* CASCatalogViewController.h */,
 				DDFE54AA1814EF41003BF9C6 /* CASCatalogViewController.m */,
+				F38A009A1F750D0800A27C5F /* SwiftExampleView.swift */,
 				DDAB257C1814BBBB00F3DAAE /* Images.xcassets */,
 				DD61F4421816370F004A8777 /* Stylesheets */,
 				4E506420190EF2E6003A03B0 /* Images */,
@@ -148,11 +170,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DDAB25931814BBBB00F3DAAE /* Build configuration list for PBXNativeTarget "ClassyExample" */;
 			buildPhases = (
-				501B6904610449669F2F8026 /* Check Pods Manifest.lock */,
 				DDAB25631814BBBB00F3DAAE /* Sources */,
 				DDAB25641814BBBB00F3DAAE /* Frameworks */,
 				DDAB25651814BBBB00F3DAAE /* Resources */,
-				244548EB6398419ABFC738FE /* Copy Pods Resources */,
+				F3B6477C1F6AF3A500B994FF /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -170,8 +191,13 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = CAS;
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = "Jonas Budelmann";
+				TargetAttributes = {
+					DDAB25661814BBBB00F3DAAE = {
+						LastSwiftMigration = 0900;
+					};
+				};
 			};
 			buildConfigurationList = DDAB25621814BBBB00F3DAAE /* Build configuration list for PBXProject "ClassyExample" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -205,39 +231,6 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		244548EB6398419ABFC738FE /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/../Pods/Pods-ClassyExample-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		501B6904610449669F2F8026 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		DDAB25631814BBBB00F3DAAE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -248,6 +241,7 @@
 				DDAB257B1814BBBB00F3DAAE /* CASAppDelegate.m in Sources */,
 				DDAB25771814BBBB00F3DAAE /* main.m in Sources */,
 				DDFE54A51814EBBC003BF9C6 /* CASRootViewController.m in Sources */,
+				F38A009B1F750D0800A27C5F /* SwiftExampleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,23 +263,34 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -298,7 +303,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -309,30 +314,40 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -345,11 +360,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ClassyExample/ClassyExample-Prefix.pch";
 				INFOPLIST_FILE = "ClassyExample/ClassyExample-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cloudling.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -360,11 +380,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ClassyExample/ClassyExample-Prefix.pch";
 				INFOPLIST_FILE = "ClassyExample/ClassyExample-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cloudling.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

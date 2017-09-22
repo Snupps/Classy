@@ -16,3 +16,12 @@ UIView.shadow-view {
         shadow-color black
         shadow-offset 0,0
 }
+
+SwiftExampleView {
+    backgroundColor: yellow
+    textColor: blue
+
+    label: @{
+        font: 30
+    }
+}

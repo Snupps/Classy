@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		4ED0F9A3198B476E00C9FE2C /* UIKit-MultipleClasses.cas in Resources */ = {isa = PBXBuildFile; fileRef = 4ED0F9A1198B465600C9FE2C /* UIKit-MultipleClasses.cas */; };
 		9980D2916D344434ACF1CB78 /* libPods-ClassyTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C594C855E67D4ABAAB9D8034 /* libPods-ClassyTests.a */; };
-		BDABE4F7F7AD42D589D779BD /* libPods-ClassyTestsLoader.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 13B648C088D7485783343464 /* libPods-ClassyTestsLoader.a */; };
 		DD10AD361819FA6800A5B71D /* CustomView-Basic.cas in Resources */ = {isa = PBXBuildFile; fileRef = DD10AD2E1819FA6800A5B71D /* CustomView-Basic.cas */; };
 		DD10AD371819FA6800A5B71D /* Properties-Basic.cas in Resources */ = {isa = PBXBuildFile; fileRef = DD10AD2F1819FA6800A5B71D /* Properties-Basic.cas */; };
 		DD10AD381819FA6800A5B71D /* Selectors-Messy.cas in Resources */ = {isa = PBXBuildFile; fileRef = DD10AD301819FA6800A5B71D /* Selectors-Messy.cas */; };
@@ -61,6 +60,8 @@
 		DDD3D5001810DF7C00E378A2 /* test_image_5.png in Resources */ = {isa = PBXBuildFile; fileRef = DDD3D4FF1810DF7C00E378A2 /* test_image_5.png */; };
 		DDE7E51F18915B0600BA5718 /* Precedence-1.cas in Resources */ = {isa = PBXBuildFile; fileRef = DDE7E51D18915B0600BA5718 /* Precedence-1.cas */; };
 		DDE7E52018915B0600BA5718 /* Precedence-2.cas in Resources */ = {isa = PBXBuildFile; fileRef = DDE7E51E18915B0600BA5718 /* Precedence-2.cas */; };
+		F3B6477F1F6AF42400B994FF /* Classy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3B6477E1F6AF42400B994FF /* Classy.framework */; };
+		F3B647801F6AF42400B994FF /* Classy.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F3B6477E1F6AF42400B994FF /* Classy.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,20 @@
 			remoteInfo = ClassyTestsLoader;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F3B647811F6AF42400B994FF /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F3B647801F6AF42400B994FF /* Classy.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		079339911EDA90D0E7C07ECD /* Pods-ClassyTestsLoader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClassyTestsLoader.release.xcconfig"; path = "../Pods/Target Support Files/Pods-ClassyTestsLoader/Pods-ClassyTestsLoader.release.xcconfig"; sourceTree = "<group>"; };
@@ -144,6 +159,7 @@
 		DDD3D5011810E02F00E378A2 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		DDE7E51D18915B0600BA5718 /* Precedence-1.cas */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Precedence-1.cas"; sourceTree = "<group>"; };
 		DDE7E51E18915B0600BA5718 /* Precedence-2.cas */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Precedence-2.cas"; sourceTree = "<group>"; };
+		F3B6477E1F6AF42400B994FF /* Classy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Classy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,7 +181,7 @@
 				DDD3D48F1810D6DA00E378A2 /* CoreGraphics.framework in Frameworks */,
 				DDD3D4911810D6DA00E378A2 /* UIKit.framework in Frameworks */,
 				DDD3D48D1810D6DA00E378A2 /* Foundation.framework in Frameworks */,
-				BDABE4F7F7AD42D589D779BD /* libPods-ClassyTestsLoader.a in Frameworks */,
+				F3B6477F1F6AF42400B994FF /* Classy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +286,7 @@
 		DDD3D4801810D6DA00E378A2 = {
 			isa = PBXGroup;
 			children = (
+				F3B6477E1F6AF42400B994FF /* Classy.framework */,
 				DDBF586F181145760059B8D3 /* Stylesheets */,
 				DDBF584518113C750059B8D3 /* Specs */,
 				DDBF585A18113C850059B8D3 /* Supporting Files */,
@@ -349,11 +366,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DDD3D4B51810D6DA00E378A2 /* Build configuration list for PBXNativeTarget "ClassyTestsLoader" */;
 			buildPhases = (
-				85CB2FDD53654D26A4128DD4 /* Check Pods Manifest.lock */,
 				DDD3D4851810D6DA00E378A2 /* Sources */,
 				DDD3D4861810D6DA00E378A2 /* Frameworks */,
 				DDD3D4871810D6DA00E378A2 /* Resources */,
-				4CC291A52E864ADB9C46B39D /* Copy Pods Resources */,
+				F3B647811F6AF42400B994FF /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -443,36 +459,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		4CC291A52E864ADB9C46B39D /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-ClassyTestsLoader/Pods-ClassyTestsLoader-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		85CB2FDD53654D26A4128DD4 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
 		978F0B8381844F0694B65CD6 /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -679,6 +665,7 @@
 				GCC_PREFIX_HEADER = "ClassyTestsLoader/Classy-Prefix.pch";
 				INFOPLIST_FILE = "ClassyTestsLoader/ClassyTestsLoader-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -696,6 +683,7 @@
 				GCC_PREFIX_HEADER = "ClassyTestsLoader/Classy-Prefix.pch";
 				INFOPLIST_FILE = "ClassyTestsLoader/ClassyTestsLoader-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

@@ -8,7 +8,7 @@
 
 #import "CASAppDelegate.h"
 #import "CASRootViewController.h"
-#import "Classy.h"
+@import Classy;
 
 @implementation CASAppDelegate
 
