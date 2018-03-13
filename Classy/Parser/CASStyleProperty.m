@@ -202,7 +202,17 @@
         }
         
         if( [value isEqualToString:@"rgb"] || [value isEqualToString:@"rgba"] ) {
-            *color = [UIColor colorWithRed:[unitTokens[0] doubleValue]/255.0 green:[unitTokens[1] doubleValue]/255.0 blue:[unitTokens[2] doubleValue]/255.0 alpha:alpha];
+            if ([UIColor.class respondsToSelector:@selector(colorWithDisplayP3Red:green:blue:alpha:)]) {
+                *color = [UIColor colorWithDisplayP3Red:[unitTokens[0] doubleValue]/255.0
+                                                  green:[unitTokens[1] doubleValue]/255.0
+                                                   blue:[unitTokens[2] doubleValue]/255.0
+                                                  alpha:alpha];
+            } else {
+                *color = [UIColor colorWithRed:[unitTokens[0] doubleValue]/255.0
+                                         green:[unitTokens[1] doubleValue]/255.0
+                                          blue:[unitTokens[2] doubleValue]/255.0
+                                         alpha:alpha];
+            }
         } else if ( [value isEqualToString:@"hsl"] || [value isEqualToString:@"hsla"] ) {
             *color = [UIColor colorWithHue:[unitTokens[0] doubleValue]/360.0 saturation:[unitTokens[1] doubleValue]/100.0 brightness:[unitTokens[2] doubleValue]/100.0 alpha:alpha];
         }
